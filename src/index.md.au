@@ -19,9 +19,9 @@ A table:
 
 | Person | Sing.    | Plural |
 | ------ | -------- | ------ |
-| 1st    | tengo    | tenemos |
-| 2nd    | tienes   | tienen  |
-| 3rd    | tiene    | tienen  |
+| 1st    | __have#1SG__ | __have#1PL__ |
+| 2nd    | __have#2SG__ | __have#2PL__ |
+| 3rd    | __have#3SG__ | __have#3PL__ |
 
 Sapien et ligula ullamcorper malesuada proin libero nunc. Lobortis scelerisque fermentum dui faucibus. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Tincidunt praesent semper feugiat nibh sed.
 

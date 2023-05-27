@@ -122,6 +122,34 @@ th, td {
   padding: 2px 6px;
 }
 
+x-out {
+  position: relative;
+  cursor: default;
+}
+
+x-src {
+  display: none;
+}
+
+x-out:hover {
+  background: #0a06;
+}
+
+x-out:hover x-src {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  top: 1.8em;
+  left: 0;
+  box-shadow: 0 0 6px #0008, inset 0 1px #555;
+  border: 1px solid #444;
+  padding: 2px 6px;
+  background: linear-gradient(to bottom, #444, #333);
+  font-size: 0.8em;
+  text-shadow: 0 -1px #000;
+}
+
     </style>
   </head>
   <body>

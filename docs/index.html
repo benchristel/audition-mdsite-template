@@ -122,6 +122,34 @@ th, td {
   padding: 2px 6px;
 }
 
+x-out {
+  position: relative;
+  cursor: default;
+}
+
+x-src {
+  display: none;
+}
+
+x-out:hover {
+  background: #0a06;
+}
+
+x-out:hover x-src {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  top: 1.8em;
+  left: 0;
+  box-shadow: 0 0 6px #0008, inset 0 1px #555;
+  border: 1px solid #444;
+  padding: 2px 6px;
+  background: linear-gradient(to bottom, #444, #333);
+  font-size: 0.8em;
+  text-shadow: 0 -1px #000;
+}
+
     </style>
   </head>
   <body>
@@ -171,18 +199,18 @@ th, td {
 </thead>
 <tbody><tr>
 <td>1st</td>
-<td>tengo</td>
-<td>tenemos</td>
+<td><strong><x-out>tengo<x-src>have#1SG</x-src></x-out></strong></td>
+<td><strong><x-out>tenemos<x-src>have#1PL</x-src></x-out></strong></td>
 </tr>
 <tr>
 <td>2nd</td>
-<td>tienes</td>
-<td>tienen</td>
+<td><strong><x-out>tienes<x-src>have#2SG</x-src></x-out></strong></td>
+<td><strong><x-out>tienen<x-src>have#2PL</x-src></x-out></strong></td>
 </tr>
 <tr>
 <td>3rd</td>
-<td>tiene</td>
-<td>tienen</td>
+<td><strong><x-out>tiene<x-src>have#3SG</x-src></x-out></strong></td>
+<td><strong><x-out>tienen<x-src>have#3PL</x-src></x-out></strong></td>
 </tr>
 </tbody></table>
 <p>Sapien et ligula ullamcorper malesuada proin libero nunc. Lobortis scelerisque fermentum dui faucibus. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Tincidunt praesent semper feugiat nibh sed.</p>
