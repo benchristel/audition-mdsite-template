@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if command -v open >/dev/null; then
+  OPEN=open # macOS
+else
+  OPEN=xdg-open # Linux
+fi
+
+bunx http-server -p 3000 docs & (
+  sleep 1
+  "$OPEN" http://localhost:3000
+)
