@@ -21,12 +21,15 @@ body {
 
 header {
   border-bottom: 5px ridge gray;
-  padding: 12px;
 }
 
 header > nav {
   display: flex;
   flex-direction: row;
+}
+
+header > nav > div {
+  padding: 12px;
 }
 
 header > nav > :where(.left, .right) {
@@ -36,6 +39,10 @@ header > nav > :where(.left, .right) {
 
 header > nav > .right {
   text-align: right;
+}
+
+header > nav .center {
+  text-align: center;
 }
 
 .divider {
@@ -123,9 +130,11 @@ th, td {
         <div class="left">
           <a href="index.html">Up</a>
         </div>
-        <a class="site-title" href="/">
-          Change this title! (in template.html)
-        </a>
+        <div class="center">
+          <a class="site-title" href="/">
+            Change this title! (in template.html)
+          </a>
+        </div>
         <div class="right">
           <a href="syntax.html" class="mdsite-prev-link">Prev</a> <span class="divider">|</span> <a href="lexicon.html" class="mdsite-next-link">Next</a>
         </div>
