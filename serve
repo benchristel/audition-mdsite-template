@@ -1,12 +1,5 @@
 #!/bin/bash
 
-if command -v open >/dev/null; then
-  OPEN=open # macOS
-else
-  OPEN=xdg-open # Linux
-fi
-
-(
-  sleep 1
-  "$OPEN" http://localhost:3000
-) & bunx http-server -p 3000 docs
+# -o: open the index page in a browser once the server is running
+# -c-1: disable caching
+bunx http-server -o -c-1 -p 3000 docs
